@@ -32,7 +32,9 @@ images2 = [
     "https://media.giphy.com/media/Z8kzcczaMydalVIRaJ/giphy.gif",
     "https://media.giphy.com/media/OjywjRbCLz4G9Yzn1w/giphy.gif",
     "https://media.giphy.com/media/dknQXUZt6HmNm3A90h/giphy.gif",
-    "https://media.giphy.com/media/P4kgnbNpGB1pkRKwhb/giphy.gif"
+    "https://media.giphy.com/media/P4kgnbNpGB1pkRKwhb/giphy.gif",
+    "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F8.gif?alt=media&token=80a48714-7aaa-45fa-a36b-a7653dc3292b",
+    "https://firebasestorage.googleapis.com/v0/b/docker-curriculum.appspot.com/o/catnip%2F9.gif?alt=media&token=a57a1c71-a8af-4170-8fee-bfe11809f0b3"
 ]
 
 @app.route("/")
