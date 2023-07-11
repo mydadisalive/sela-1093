@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sela-1093-service
+spec:
+  selector:
+    app: sela-1093
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: NodePort
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sela-1093
+spec:
+  replicas: 3  # Number of desired replicas
+  selector:
+    matchLabels:
+      app: sela-1093
+  template:
+    metadata:
+      labels:
+        app: sela-1093
+    spec:
+      containers:
+        - name: sela-1093
+          image: mydadisalive/sela-1093:latest
+          ports:
+            - containerPort: 5000  # Port on which your Flask app listens
